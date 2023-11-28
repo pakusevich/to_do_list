@@ -1,0 +1,116 @@
+@font-face {
+    font-family: "Lobster";
+    src: url("assets/fonts/Lobster/Lobster-Regular.ttf");
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: "Lobster";
+    font-size: 26px;
+    background-image: url("assets/img/background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.container {
+    margin: 50px 250px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background: rgba(255, 255, 255, 0.1);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+h1 {
+    color: white;
+    font-size: 60px;
+}
+
+button {
+    margin: 10px;
+    width: 15%;
+    padding: 10px;
+    border: none;
+    border-radius: 15px;
+    background-color: #B8BFBE;
+    font-family: "Lobster";
+    font-size: 20px;
+    color: #2E4159;
+}
+
+.sort {
+    width: 150px;
+    height: 45px;
+}
+
+
+.task-list {
+    width: 850px;
+    margin-bottom: 30px;
+
+    border-radius: 15px;
+}
+
+#start-message {
+    margin: 10px;
+    text-align: center;
+    color: #2E4159;
+}
+
+.task {
+    display: flex;
+    align-items: center;
+    padding: 5px 17px;
+    border-radius: 15px;
+}
+
+.task p {
+    margin-left: 10px;
+    margin-right: 100px;
+    color: white;
+}
+
+.completed {
+    background-color: #2E4159;
+    color: white;
+}
+
+.completed p {
+    text-decoration: line-through;
+}
+
+.input-panel {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 850px;
+    margin: 8px;
+    padding: 2px;
+
+}
+
+input {
+    margin: 10px;
+    font-size: 28px;
+}
+
+.input-panel button {
+    padding: 4px;
+    width: 25%;
+}
+
+.input-panel input {
+    height: 34px;
+    padding-left: 4px;
+    width: 68%;
+}
+
+

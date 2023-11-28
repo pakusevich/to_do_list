@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To do List</title>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container">
+    <h1>To do List</h1>
+    <div class="input-panel">
+        <input type="text" id="task-name-input">
+        <button id="add-task-btn" class="btn">Add task</button>
+    </div>
+    <div class="buttons">
+        <button id="tasks-not-complete" class="btn sort">Not completed</button>
+        <button id="tasks-all" class="btn sort">All</button>
+    </div>
+    <div class="task-list">
+        <p id="start-message">No new tasks</p>
+    </div>
+
+</div>
+<script src="assets/snowfall/snowfall.js"></script>
+<script src="main.js"></script>
+<script type="text/javascript">
+    $(document).ready(function () {
+        $(document).snowfall({flakeCount: 700});
+    });
+</script>
+</body>
+
+</html>
